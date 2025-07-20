@@ -26,3 +26,7 @@ Make sure you have Python 3.7+ installed.
 Install required Python libraries:
 ```bash
 pip install customtkinter
+
+##  Application Preview
+
+![File Organizer GUI Output](Output.png)
