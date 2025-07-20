@@ -28,5 +28,4 @@ Install required Python libraries:
 pip install customtkinter
 
 
-<img width="560" height="437" alt="Output" src="https://github.com/user-attachments/assets/1a2d288e-1fcf-4b99-baa1-2b15e7c6c303" />
 
