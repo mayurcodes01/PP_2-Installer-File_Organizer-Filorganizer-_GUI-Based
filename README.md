@@ -27,6 +27,5 @@ Install required Python libraries:
 ```bash
 pip install customtkinter
 
-## 🖼️ Application Output Preview
-
-![File Organizer Output](https://raw.githubusercontent.com/mayurcodes01/PP_2-Installer-File_Organizer-Filorganizer-_GUI-Based/main/Output.png)
+## Application Output Preview
+<img width="560" height="437" alt="Output" src="https://github.com/user-attachments/assets/67fb91b7-da04-4e59-a93e-1c6a8c17b155" />
