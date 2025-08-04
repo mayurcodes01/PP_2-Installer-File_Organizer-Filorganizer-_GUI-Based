@@ -45,8 +45,3 @@ def resource_path(relative_path):
 
     return os.path.join(base_path, relative_path)
 
-Note: This code may raise errors or not work correctly in some environments due to _MEIPASS or _MEIPASS2. Make sure to test your executable thoroughly across platforms.
-
-
-This approach is widely used and was originally discussed here:
-[ StackOverflow – Bundling data files with PyInstaller (onefile)](https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile)
