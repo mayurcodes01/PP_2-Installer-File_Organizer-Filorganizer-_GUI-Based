@@ -29,7 +29,8 @@ pip install customtkinter
 
 
 
-##  Important: Handling Resource Paths with PyInstaller
+**### Prerequisites**
+Important: Handling Resource Paths with PyInstaller
 
 
 
