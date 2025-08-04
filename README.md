@@ -28,4 +28,25 @@ Install required Python libraries:
 pip install customtkinter
 
 
+##  Important: Handling Resource Paths with PyInstaller
 
+When packaging your Python project as a standalone executable using **PyInstaller**, file paths to bundled data (e.g., images, icons, config files) may not behave as expected. This is because PyInstaller extracts files to a **temporary directory** at runtime.
+
+Use the following helper function to correctly resolve paths to bundled resources:
+
+```python
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+Note: This code may raise errors or not work correctly in some environments due to _MEIPASS or _MEIPASS2. Make sure to test your executable thoroughly across platforms.
+
+
+This approach is widely used and was originally discussed here:
+[ StackOverflow – Bundling data files with PyInstaller (onefile)](https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile)
